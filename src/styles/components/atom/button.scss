@@ -1,0 +1,21 @@
+button.button {
+  width: 100%;
+  text-align: center;
+  // color: $black;
+  font-size: 14px;
+  font-weight: 400;
+
+  &.m {
+    height: 40px;
+    max-width: 120px;
+    line-height: 40px;
+    padding: 0;
+  }
+
+  &.s {
+    height: 32px;
+    max-width: 100px;
+    line-height: 32px;
+    padding: 0 12px;
+  }
+}
