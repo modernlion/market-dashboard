@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const nextConfig = {
   webpack: (config) => {
@@ -25,7 +29,18 @@ const nextConfig = {
         ],
       }
     );
+
+ 
+
+    
     return config;
+  },
+  sassOptions: {
+    additionalData: `
+    @import "@/styles/variables.scss";
+    @import "@/styles/mixin.scss";
+  `,
+    includePaths: [path.join(__dirname, 'styles')],
   },
   trailingSlash: true,
   compress: false,

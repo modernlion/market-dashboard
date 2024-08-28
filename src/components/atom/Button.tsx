@@ -2,7 +2,7 @@
 
 import classNames from "classnames";
 import { PropsWithChildren } from "react";
-import "@/styles//components/atom/button.scss";
+import "@/styles/components/atom/button.scss";
 
 interface Props {
   size?: "s" | "m";

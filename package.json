@@ -24,6 +24,7 @@
 		"storybook": "^8.1.11"
 	},
 	"devDependencies": {
+		"prettier": "^3.3.3",
 		"@commitlint/cli": "^19.4.0",
 		"@commitlint/config-conventional": "^19.2.2",
 		"@svgr/webpack": "^8.1.0",
