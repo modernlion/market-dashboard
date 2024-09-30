@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	font-family: 'Pretendard';
 }
 
 html,
@@ -11,7 +12,7 @@ body {
 }
 
 body {
-	color: $black;
+	color: $text;
 	min-height: 100vh;
 }
 
@@ -29,7 +30,7 @@ li {
 
 button {
 	outline: none;
-	background-color: $white;
+	background-color: $bg;
 	border: none;
 	cursor: pointer;
 }

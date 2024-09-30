@@ -1,15 +1,16 @@
-import Home from '@/features/home/Home.page';
 import React, {Suspense} from 'react';
 import {ErrorBoundary, FallbackProps} from 'react-error-boundary';
 
-function HomePage() {
+import {WalletsPage} from '@/features/wallets';
+
+function Collections() {
 	return (
 		// <ErrorBoundary FallbackComponent={<div>hi</div>} /* onReset={reset} */>
 		<Suspense fallback={<div />}>
-			<Home />
+			<WalletsPage />
 		</Suspense>
 		// </ErrorBoundary>
 	);
 }
 
-export default HomePage;
+export default Collections;

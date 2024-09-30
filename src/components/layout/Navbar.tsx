@@ -1,13 +1,15 @@
-import '@/styles/common/navbar.scss';
-import {IcDefaultAccount, IcLogoKonkrit} from '@assets/icons';
+import '@/styles/layout/navbar.scss';
+import {IcDefaultAccount} from '@assets/icons';
+import {Text} from '@/components/atom';
 
 function Navbar() {
 	return (
 		<nav className="navbar">
-			<IcLogoKonkrit />
-
 			<section className="user-profile">
-				<p className="user-profile__name">홍길동</p>
+				<Text variant="label" size="md" weight="bold">
+					홍길동
+				</Text>
+
 				<IcDefaultAccount className="user-profile__icon" />
 			</section>
 		</nav>
