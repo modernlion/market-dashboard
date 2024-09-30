@@ -1,1 +1,302 @@
-$black: #000000;
+// common
+$navHeight: 60px;
+$sidebarWidth: 240px;
+
+// colors
+$grey10: #ffffff;
+$grey15: #fdfdfd;
+$grey20: #fafafa;
+$grey25: #f7f7f7;
+$grey30: #f3f3f3;
+$grey35: #f1f1f1;
+$grey40: #ebebeb;
+$grey45: #e3e3e3;
+$grey50: #d4d4d4;
+$grey55: #cccccc;
+$grey60: #b5b5b5;
+$grey65: #8a8a8a;
+$grey70: #616161;
+$grey80: #4a4a4a;
+$grey90: #303030;
+$grey100: #1a1a1a;
+
+$lightblue10: #fbfdff;
+$lightblue15: #f2f9ff;
+$lightblue20: #eaf4ff;
+$lightblue25: #e0f0ff;
+$lightblue30: #d5ebff;
+$lightblue35: #cae6ff;
+$lightblue40: #c0e1ff;
+$lightblue45: #a8d8ff;
+$lightblue50: #91d0ff;
+$lightblue55: #51c0ff;
+$lightblue60: #0094d5;
+$lightblue65: #007cb4;
+$lightblue70: #00679b;
+$lightblue80: #00527c;
+$lightblue90: #003a5a;
+$lightblue100: #002133;
+
+$green10: #f8fffb;
+$green15: #e3ffed;
+$green20: #cdfee1;
+$green25: #b4fed2;
+$green30: #92fec2;
+$green35: #63fdb0;
+$green40: #38faa3;
+$green45: #35ee9b;
+$green50: #32e193;
+$green55: #2ed389;
+$green60: #32a06e;
+$green65: #29845a;
+$green70: #136f45;
+$green80: #0c5132;
+$green90: #083d25;
+$green100: #092a1b;
+
+$blue10: #fcfdff;
+$blue15: #eef2ff;
+$blue20: #dee5ff;
+$blue25: #cdd8ff;
+$blue30: #bccbff;
+$blue35: #acbeff;
+$blue40: #9bb1ff;
+$blue45: #8aa4ff;
+$blue50: #7997ff;
+$blue55: #698aff;
+$blue60: #587dff;
+$blue65: #5072e8;
+$blue70: #3e59b5;
+$blue80: #2a3d7c;
+$blue90: #25356b;
+$blue100: #001633;
+
+$red10: #fffbfb;
+$red15: #fff6f6;
+$red20: #ffedec;
+$red25: #fee9e8;
+$red30: #fee2e1;
+$red35: #fedad9;
+$red40: #fed3d1;
+$red45: #fec3c1;
+$red50: #fdb0ac;
+$red55: #fd817a;
+$red60: #ef4d2f;
+$red65: #e51c00;
+$red70: #b5260b;
+$red80: #8e1f0b;
+$red90: #5f1507;
+$red100: #2f0a04;
+
+$orange10: #fffdfa;
+$orange15: #fff7ee;
+$orange20: #fff1e3;
+$orange25: #ffebd5;
+$orange30: #ffe4c6;
+$orange35: #ffddb6;
+$orange40: #ffd6a4;
+$orange45: #ffc06e;
+$orange50: #ffa938;
+$orange55: #ff9200;
+$orange60: #f38303;
+$orange65: #dd7a01;
+$orange70: #a96404;
+$orange80: #825101;
+$orange90: #3e2b02;
+$orange100: #371e03;
+
+$yellow10: #fffdf6;
+$yellow15: #fffaea;
+$yellow20: #fff5d5;
+$yellow25: #ffefc0;
+$yellow30: #ffeaab;
+$yellow35: #ffe595;
+$yellow40: #ffe080;
+$yellow45: #ffda6b;
+$yellow50: #ffd556;
+$yellow55: #e6c04d;
+$yellow60: #ccaa45;
+$yellow65: #bfa041;
+$yellow70: #998034;
+$yellow80: #736027;
+$yellow90: #594b1e;
+$yellow100: #4c3e15;
+
+$teal10: #fafffe;
+$teal15: #e7fcf8;
+$teal20: #d7fbf3;
+$teal25: #c0f9ef;
+$teal30: #a5f7e9;
+$teal35: #90f4e3;
+$teal40: #92edde;
+$teal45: #82e3d1;
+$teal50: #74dbc8;
+$teal55: #17c7a7;
+$teal60: #13a389;
+$teal65: #0e8470;
+$teal70: #086b5a;
+$teal80: #095346;
+$teal90: #06382f;
+$teal100: #05241e;
+
+$purple10: #fdfdff;
+$purple15: #f8f7ff;
+$purple20: #f3f1ff;
+$purple25: #efecff;
+$purple30: #e9e5ff;
+$purple35: #e4deff;
+$purple40: #dfd9ff;
+$purple45: #d4ccff;
+$purple50: #c7bcff;
+$purple55: #aa95ff;
+$purple60: #9474ff;
+$purple65: #8051ff;
+$purple70: #7126ff;
+$purple80: #5700d1;
+$purple90: #3b0093;
+$purple100: #1c004f;
+
+$magenta10: #fffdff;
+$magenta15: #fff5ff;
+$magenta20: #fdeffd;
+$magenta25: #fee7fe;
+$magenta30: #fcdffc;
+$magenta35: #fbd7fb;
+$magenta40: #fbcffb;
+$magenta45: #f9bef9;
+$magenta50: #f8b1f8;
+$magenta55: #f68df6;
+$magenta60: #e156e1;
+$magenta65: #c530c5;
+$magenta70: #9f269f;
+$magenta80: #791a79;
+$magenta90: #561056;
+$magenta100: #340634;
+
+// colors
+$bg: $grey10;
+$bgAlt: $grey20;
+
+$bgSurface: $grey10;
+$bgSurfaceHover: $grey25;
+$bgSurfaceActive: $grey30;
+$bgSurfaceSelected: $grey35;
+$bgSurfaceDisabled: $grey20;
+$bgSurfaceSuccess: $teal15;
+$bgSurfaceWarning: $yellow15;
+$bgSurfaceErorr: $red20;
+$bgSurfaceInfo: $lightblue20;
+
+$bgFill: $yellow50;
+$bgFillHover: $yellow55;
+$bgFillDisabled: $grey35;
+
+$bgFillSecondary: $grey10;
+$bgFillSecondaryHover: $grey20;
+$bgFillSecondaryInverse: $grey100;
+$bgFillSecondaryInverseHover: $grey80;
+
+$bgFillTertiary: $grey35;
+$bgFillTertiaryHover: $grey40;
+$bgFillTertiarySuccess: $green50;
+$bgFillTertiaryWarning: $orange50;
+
+$bgFillErorr: $red55;
+$bgFillInfo: $blue60;
+
+$text: $grey100;
+$textSecondary: $grey70;
+$textTertiary: $grey65;
+$textQuaternary: $grey60;
+
+$textDisabled: $grey50;
+$textInverse: $grey10;
+$textOnBgHover: $grey45;
+$textInfo: $lightblue80;
+$textSuccess: $green60;
+$textWarning: $orange60;
+$textError: $red60;
+$textEmphasis: $blue70;
+$textLink: $blue70;
+$textLinkHover: $blue80;
+$textLinkInverse: $blue45;
+
+$icon: $grey100;
+$iconHover: $grey90;
+$iconSelected: $yellow50;
+$iconDisabled: $grey55;
+$iconSecondary: $grey65;
+$iconSecondaryHover: $grey70;
+$iconInfo: $lightblue60;
+$iconSuccess: $green60;
+$iconWarning: $orange60;
+$iconError: $red60;
+$iconInverse: $grey10;
+
+$border: $grey45;
+$borderInverse: $grey10;
+$borderHover: $grey55;
+$borderDisabled: $grey40;
+$borderSecondary: $grey40;
+$borderTertiary: $grey55;
+$borderInfo: $lightblue45;
+$borderSuccess: $green30;
+$borderWarning: $orange45;
+$borderError: $red60;
+$borderFocus: $grey100;
+
+$materialDimmer: #1a1a1a85;
+
+// space
+$space0: 0px;
+$space50: 2px;
+$space100: 4px;
+$space150: 6px;
+$space200: 8px;
+$space250: 10px;
+$space300: 12px;
+$space350: 14px;
+$space400: 16px;
+$space450: 18px;
+$space500: 20px;
+$space600: 24px;
+$space650: 26px;
+$space700: 28px;
+$space800: 32px;
+$space900: 36px;
+$space1000: 40px;
+$space1100: 44px;
+$space1200: 48px;
+$space1600: 64px;
+$space2000: 80px;
+
+$spacePageMargin: $space400;
+$spaceCardPadding: $space400;
+$spaceButtonGroupGap: $space200;
+$spaceCardGap: $space400;
+$spaceTableCellPadding: $space200;
+
+//radius
+$radiusNone: 0px;
+$radius3Xs: 2px;
+$radius2Xs: 4px;
+$radiusXs: 6px;
+$radiusMd: 8px;
+$radiusLg: 12px;
+$radiusXl: 16px;
+$radius2Xl: 20px;
+$radius3Xl: 24px;
+$radiusFull: 100%;
+
+// grid
+$xm: 599px;
+$sm: 879px;
+$md: 1199px;
+$lg: 1440px;
+$fluid: 1440px;
+
+$shadowSm: 0px 1px 4px 0px rgba(26, 26, 26, 0.1);
+$shadowMd: 0px 2px 8px 0px rgba(26, 26, 26, 0.1);
+$shadowLg: 0px 4px 16px 0px rgba(26, 26, 26, 0.1);
+$shadowXl: 0px 6px 24px 0px rgba(26, 26, 26, 0.1);
+$shadow2Xl: 0px 8px 32px 0px rgba(26, 26, 26, 0.1);

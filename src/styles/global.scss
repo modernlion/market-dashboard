@@ -1,23 +1,36 @@
-// @import "./mixin.scss";
-@import "@/styles//variables.scss";
-
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Pretendard';
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+	max-width: 100vw;
+	overflow-x: hidden;
 }
 
 body {
-  color: $black;
+	color: $text;
+	min-height: 100vh;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	outline: none;
+	background-color: $bg;
+	border: none;
+	cursor: pointer;
 }
