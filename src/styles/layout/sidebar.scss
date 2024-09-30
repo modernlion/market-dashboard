@@ -1,0 +1,46 @@
+section.sidebar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1001;
+
+	width: $sidebarWidth;
+	height: 100%;
+
+	background-color: #fff;
+	border-right: 1px solid $border;
+
+	.konkrit__logo {
+		padding: 16px;
+		max-height: 58px;
+		cursor: pointer;
+	}
+}
+
+.menu {
+	padding: 8px 12px;
+}
+
+.menu__list {
+	.menu__list__box {
+		display: flex;
+		gap: 8px;
+		align-items: center;
+		height: 44px;
+		width: 100%;
+		padding: 10px 8px;
+		border-radius: 8px;
+
+		cursor: pointer;
+
+		.menu__text {
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 24px;
+		}
+
+		&.active {
+			background-color: #f1f1f1;
+		}
+	}
+}

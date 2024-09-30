@@ -3,6 +3,8 @@ import {Inter} from 'next/font/google';
 import '@/styles/global.scss';
 import ReactQueryProviders from '@/utils/ReactQueryProvider';
 import {Provider} from 'jotai';
+import PageTemplate from '@/components/template/PageTemplate';
+import {Navbar, Sidebar} from '@/components/layout';
 
 const inter = Inter({subsets: ['latin']});
 
@@ -20,7 +22,12 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={inter.className}>
 				<Provider>
-					<ReactQueryProviders>{children}</ReactQueryProviders>
+					<ReactQueryProviders>
+						<Navbar />
+						<Sidebar />
+
+						<PageTemplate>{children}</PageTemplate>
+					</ReactQueryProviders>
 				</Provider>
 			</body>
 		</html>

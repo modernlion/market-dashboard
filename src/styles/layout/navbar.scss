@@ -1,0 +1,33 @@
+nav.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	width: 100%;
+	height: $navHeight;
+	padding: 0 16px;
+	padding-left: calc($sidebarWidth + 16px);
+
+	background-color: $bg;
+	border-bottom: 1px solid $border;
+
+	.user-profile {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+
+		.user-profile__name {
+			color: $text;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 20px;
+		}
+		.user-profile__icon {
+		}
+	}
+}

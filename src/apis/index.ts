@@ -20,7 +20,7 @@ authInstance.interceptors.request.use(
 
 		return config;
 	},
-	(error) => Promise.reject(error),
+	(error) => Promise.reject(error)
 );
 
 authInstance.interceptors.response.use(
@@ -29,7 +29,7 @@ authInstance.interceptors.response.use(
 	},
 	(error) => {
 		return Promise.reject(error);
-	},
+	}
 );
 
 export {instance, authInstance};
