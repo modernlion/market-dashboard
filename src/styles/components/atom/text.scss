@@ -115,6 +115,8 @@ h1.display,
 h3.headline,
 p.body,
 span.label {
+	color: $text;
+
 	&.text {
 		color: $text;
 	}
@@ -159,5 +161,20 @@ span.label {
 	}
 	&.textLinkInverse {
 		color: $textLinkInverse;
+	}
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-inline-box;
+
+	&.line-limit1 {
+		-webkit-line-clamp: 1;
+	}
+	&.line-limit2 {
+		-webkit-line-clamp: 2;
+	}
+	&.line-limit3 {
+		-webkit-line-clamp: 3;
 	}
 }

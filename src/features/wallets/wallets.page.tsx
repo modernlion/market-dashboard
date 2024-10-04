@@ -1,10 +1,15 @@
+import '@styles/app/wallets.scss';
+
 import React from 'react';
+import {TitleSection} from '@/components/molcules';
+import WalletListSection from './WalletListSection';
 
 function WalletsPage() {
 	return (
-		<div>
-			<div>WalletsPage!!!!</div>
-		</div>
+		<>
+			<TitleSection title="Wallets" desc="desc" />
+			<WalletListSection />
+		</>
 	);
 }
 

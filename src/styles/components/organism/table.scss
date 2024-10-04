@@ -1,0 +1,65 @@
+table.table__container {
+	width: 100%;
+	table-layout: auto;
+	overflow-x: auto;
+
+	.table__head {
+		> tr {
+			display: flex;
+			gap: 20px;
+
+			padding: 10px 0px 10px 12px;
+
+			border-bottom: 1px solid $borderFocus;
+
+			> th {
+				flex: 1 1;
+				// flex-basis: auto;
+				// min-width: 80px;
+				// max-width: 240px;
+
+				height: 60px;
+
+				line-height: 60px;
+				text-align: left;
+			}
+		}
+	}
+
+	.table__body {
+		> tr {
+			display: flex;
+			gap: 20px;
+
+			padding: 10px 0px 10px 12px;
+
+			border-bottom: 1px solid $borderDisabled;
+			background-color: $bgSurface;
+
+			> td {
+				flex: 1 1;
+				// flex-basis: auto;
+				// min-width: 80px;
+				// max-width: 240px;
+				height: 60px;
+
+				line-height: 60px;
+				text-align: left;
+
+				overflow: hidden;
+
+				cursor: pointer;
+
+				> span {
+					display: inline-block;
+					width: 100%;
+					line-height: 60px;
+				}
+			}
+
+			&:hover {
+				background-color: $bgSurfaceHover;
+			}
+		}
+	}
+}
