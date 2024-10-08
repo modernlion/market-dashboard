@@ -1,5 +1,5 @@
 import '@/styles/layout/navbar.scss';
-import {IcDefaultAccount} from '@assets/icons';
+import {IcDefaultAccount} from '@/styles/icons';
 import {Text} from '@/components/atom';
 
 function Navbar() {
