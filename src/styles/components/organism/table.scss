@@ -19,6 +19,10 @@ table.table__container {
 				// max-width: 240px;
 
 				text-align: left;
+
+				> span {
+					color: $textSecondary;
+				}
 			}
 		}
 	}

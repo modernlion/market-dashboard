@@ -18,11 +18,11 @@ interface Props<T> {
 }
 
 function Table<T>({headList, dataList}: Props<T>) {
-	const getCellMinWidth = (type: string) => {
-		if (NUMBER_TYPE_CELL.includes(type)) {
-			return 'width80';
-		}
-	};
+	// const getCellMinWidth = (type: string) => {
+	// 	if (NUMBER_TYPE_CELL.includes(type)) {
+	// 		return 'width80';
+	// 	}
+	// };
 
 	/* TODO: 동적으로 테이블 줄어들기를 설정하려면 basis, min,max-width 수정 필요 */
 	return (
