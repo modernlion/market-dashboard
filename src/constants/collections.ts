@@ -1,4 +1,4 @@
-export const defaultCollectionParams = {
+export const DEFAULT_COLLECTION_QUERY_PARAMS = {
 	nftContractAddress: '',
 	ownerId: '',
 	collectionName: '',
