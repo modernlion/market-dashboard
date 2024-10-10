@@ -17,10 +17,6 @@ export default function Home() {
 		}));
 	};
 
-	useEffect(() => {
-		console.log('!#!@@!#!@#', loginInfo);
-	}, [loginInfo]);
-
 	return (
 		<main>
 			<h1 className="h1">h111</h1>

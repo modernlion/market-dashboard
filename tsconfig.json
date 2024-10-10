@@ -22,7 +22,7 @@
 		"paths": {
 			"@/*": ["./src/*"],
 			"@assets/*": ["./public/assets/*"],
-			// "@styles/app/*": ["./src/styles/app/*"],
+			"@styles/app/*": ["./src/styles/app/*"],
 			// "@styles/common/*": ["./src/styles/common/*"],
 			// "@styles/components/atom/*": ["./src/styles/components/atom/*"],
 			// "@styles/components/molecule/*": ["./src/styles/components/molecule/*"],

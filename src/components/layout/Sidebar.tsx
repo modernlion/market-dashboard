@@ -1,6 +1,6 @@
 'use client';
 import '@/styles/layout/sidebar.scss';
-import {IcCollection, IcLogoKonkrit, IcWallet} from '@assets/icons';
+import {IcCollection, IcLogoKonkrit, IcWallet} from '@/styles/icons';
 import classNames from 'classnames';
 import Link from 'next/link';
 import {usePathname} from 'next/navigation';
