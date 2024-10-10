@@ -1,7 +1,7 @@
 import {useEffect, useMemo, useState} from 'react';
 import {usePathname, useRouter, useSearchParams} from 'next/navigation';
 
-import {defaultWalletQueryParams} from '@/constants/wallets';
+import {DEFAULT_WALLET_QUERY_PARAMS} from '@/constants/wallets';
 
 const usePaginationHandler = (totalPage: number) => {
 	const router = useRouter();
@@ -68,7 +68,7 @@ const usePaginationHandler = (totalPage: number) => {
 	useEffect(() => {
 		/* 쿼리 파람스 없이 페이지에 접근시, 디폴트 쿼리 설정 */
 		if (!page || !perPage) {
-			const queryParams = new URLSearchParams(defaultWalletQueryParams);
+			const queryParams = new URLSearchParams(DEFAULT_WALLET_QUERY_PARAMS);
 			router.push(`${pathname}?${queryParams}`);
 		}
 	}, []);
