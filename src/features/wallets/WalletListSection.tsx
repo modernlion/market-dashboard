@@ -6,6 +6,7 @@ import {WalletListProps} from '@/types/wallets';
 import Pagination from '@/components/organism/Pagination';
 import {usePaginationHandler} from '@/hooks';
 import {Text} from '@/components/atom';
+import {dummyWalletList} from '@/mocks/wallets/walletList.mock';
 
 const WALLET_HEAD_CELL_LIST = ['Address', 'Created at', 'Collections'];
 
@@ -23,7 +24,7 @@ function WalletListSection() {
 
 	return (
 		<>
-			<Table<WalletListProps> headList={WALLET_HEAD_CELL_LIST} dataList={dummy} />
+			<Table<WalletListProps> headList={WALLET_HEAD_CELL_LIST} dataList={dummyWalletList} />
 			<div className="wallet__pagination__container">
 				<Text variant="label" size="md" weight="regular">
 					{`${pageDetail.totalCount.toLocaleString()}중 ${perPage * page + 1} - ${perPage * page + perPage}`}
@@ -42,174 +43,3 @@ function WalletListSection() {
 }
 
 export default WalletListSection;
-
-const dummy = [
-	{
-		nftContractAddress: 'nft 0X432sdfaofhwuehfsdfsadf',
-		createAt: '2024-10-04T06:40:32.393Z',
-		collectionCount: '3',
-	},
-	{
-		nftContractAddress: 'nft 0X432sdfaofhwuehfs',
-		createAt: '2024-10-04T06:40:32.393Z',
-		collectionCount: '3',
-	},
-	{
-		nftContractAddress: 'nft 0X432sdfaofhwuehfsdfsadf23412sd0X3412sd0X432sdfaofhwuehfsdfsadf23412sd',
-		createAt: '2024-10-04T06:40:32.393Z',
-		collectionCount: '3',
-	},
-	{
-		nftContractAddress: 'nft 0X432sdfaofhwuehfsdfsadf23412sd0sadf23412sd',
-		createAt: '2024-10-04T06:40:32.393Z',
-		collectionCount: '3',
-	},
-	{
-		nftContractAddress: 'nft 0X432sdfaofhwuehfsdfsadf23412sd0',
-		createAt: '2024-10-04T06:40:32.393Z',
-		collectionCount: '3',
-	},
-	{
-		nftContractAddress:
-			'nft 0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd',
-		createAt: '2024-10-04T06:40:32.393Z',
-		collectionCount: '3',
-	},
-	{
-		nftContractAddress:
-			'nft 0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd',
-		createAt: '2024-10-04T06:40:32.393Z',
-		collectionCount: '3',
-	},
-	{
-		nftContractAddress:
-			'nft 0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd',
-		createAt: '2024-10-04T06:40:32.393Z',
-		collectionCount: '3',
-	},
-	{
-		nftContractAddress:
-			'nft 0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd',
-		createAt: '2024-10-04T06:40:32.393Z',
-		collectionCount: '3',
-	},
-	{
-		nftContractAddress:
-			'nft 0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd0X432sdfaofhwuehfsdfsadf23412sd',
-		createAt: '2024-10-04T06:40:32.393Z',
-		collectionCount: '3',
-	},
-];
-
-// const dummy = [
-// 	{
-// 		collectionId: 'lecction idddddd',
-// 		chainId: 'chianIDDDDDDDD',
-// 		name: 'string name!!@!@#!2',
-// 		ownerAccountAddress: 'onwer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		nftContractAddress: 'nft 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		minteerContractAddress: 'minteer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		description: 'descrrrr  string',
-// 		nftTotalSupply: '1123123213',
-// 		nftOwners: 'dh',
-// 		createAt: new Date(),
-// 	},
-// 	{
-// 		collectionId: 'lecction idddddd',
-// 		chainId: 'chianIDDDDDDDD',
-// 		name: 'string name!!@!@#!2',
-// 		ownerAccountAddress: 'onwer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		nftContractAddress: 'nft 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		minteerContractAddress: 'minteer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		description: 'descrrrr  string',
-// 		nftTotalSupply: '1123123213',
-// 		nftOwners: 'dh',
-// 		createAt: new Date(),
-// 	},
-// 	{
-// 		collectionId: 'lecction idddddd',
-// 		chainId: 'chianIDDDDDDDD',
-// 		name: 'string name!!@!@#!2',
-// 		ownerAccountAddress: 'onwer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		nftContractAddress: 'nft 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		minteerContractAddress: 'minteer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		description: 'descrrrr  string',
-// 		nftTotalSupply: '1123123213',
-// 		nftOwners: 'dh',
-// 		createAt: new Date(),
-// 	},
-// 	{
-// 		collectionId: 'lecction idddddd',
-// 		chainId: 'chianIDDDDDDDD',
-// 		name: 'string name!!@!@#!2',
-// 		ownerAccountAddress: 'onwer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		nftContractAddress: 'nft 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		minteerContractAddress: 'minteer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		description: 'descrrrr  string',
-// 		nftTotalSupply: '1123123213',
-// 		nftOwners: 'dh',
-// 		createAt: new Date(),
-// 	},
-// 	{
-// 		collectionId: 'lecction idddddd',
-// 		chainId: 'chianIDDDDDDDD',
-// 		name: 'string name!!@!@#!2',
-// 		ownerAccountAddress: 'onwer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		nftContractAddress: 'nft 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		minteerContractAddress: 'minteer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		description: 'descrrrr  string',
-// 		nftTotalSupply: '1123123213',
-// 		nftOwners: 'dh',
-// 		createAt: new Date(),
-// 	},
-// 	{
-// 		collectionId: 'lecction idddddd',
-// 		chainId: 'chianIDDDDDDDD',
-// 		name: 'string name!!@!@#!2',
-// 		ownerAccountAddress: 'onwer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		nftContractAddress: 'nft 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		minteerContractAddress: 'minteer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		description: 'descrrrr  string',
-// 		nftTotalSupply: '1123123213',
-// 		nftOwners: 'dh',
-// 		createAt: new Date(),
-// 	},
-// 	{
-// 		collectionId: 'lecction idddddd',
-// 		chainId: 'chianIDDDDDDDD',
-// 		name: 'string name!!@!@#!2',
-// 		ownerAccountAddress: 'onwer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		nftContractAddress: 'nft 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		minteerContractAddress: 'minteer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		description: 'descrrrr  string',
-// 		nftTotalSupply: '1123123213',
-// 		nftOwners: 'dh',
-// 		createAt: new Date(),
-// 	},
-// 	{
-// 		collectionId: 'lecction idddddd',
-// 		chainId: 'chianIDDDDDDDD',
-// 		name: 'string name!!@!@#!2',
-// 		ownerAccountAddress: 'onwer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		nftContractAddress: 'nft 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		minteerContractAddress: 'minteer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		description: 'descrrrr  string',
-// 		nftTotalSupply: '1123123213',
-// 		nftOwners: 'dh',
-// 		createAt: new Date(),
-// 	},
-// 	{
-// 		collectionId: 'lecction idddddd',
-// 		chainId: 'chianIDDDDDDDD',
-// 		name: 'string name!!@!@#!2',
-// 		ownerAccountAddress: 'onwer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		nftContractAddress: 'nft 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		minteerContractAddress: 'minteer 0X432sdfaofhwuehfsdfsadf23412sd',
-// 		description: 'descrrrr  string',
-// 		nftTotalSupply: '1123123213',
-// 		nftOwners: 'dh',
-// 		createAt: new Date(),
-// 	},
-// ];
-
-// collections	collectionListResForm[]	조회된 컬렉션 리스트
